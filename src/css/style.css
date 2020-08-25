@@ -1,0 +1,21 @@
+h1 {
+    color: red;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+.notyet {
+    color: grey;
+}
