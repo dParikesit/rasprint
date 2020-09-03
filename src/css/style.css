@@ -1,26 +1,14 @@
-h1 {
-    color: red;
+html {
+    box-sizing: border-box;
 }
 
-.container-flex {
-    display: flex;
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-h1 {
-    display: flex;
-}
-
-.success {
-    color: green;
-}
-
-.fail {
-    color: red;
-}
-
-.notyet {
-    color: grey;
-}
