@@ -6,13 +6,25 @@
     <title>Rasprint</title>
 </head>
 <body>
+    <img id="image" class="img-fluid">
     <div class="container-fluid">
-        <img id="image" class="img-fluid">
-        <form action="/upload" method="post" id="formElem" enctype="multipart/form-data">
-            <input type="file" multiple name="docs">
-            <input type="submit" value="Print!">
-        </form>
-        <ul id="ulist" class="list-group"></ul>
+        <div class="row">
+            <div class="col-auto">
+                <form action="/upload" method="post" id="formElem" enctype="multipart/form-data">
+                    <input type="file" class="form-control" multiple name="docs">
+                </form>
+            </div>
+            <div class="col-auto">
+                <input type="submit" form="formElem" value="Print!" class="btn btn-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="list-group">
+                <ul id="ulist" class="list-group-item-success"></ul>
+            </div>
+        </div>
+
     </div>
+
 </body>
 </html>
