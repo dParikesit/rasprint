@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "mulai": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development && node ./dist/server.js && mkdir ./dist/files",
+    "mulai": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development && mkdir ./dist/files && node ./dist/server.js",
     "build": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development",
     "start": "node ./dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
