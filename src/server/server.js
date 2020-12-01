@@ -28,7 +28,7 @@ app.post('/upload', upload.array('docs', 5), function(req, res, next){
     }
 })
 const PORT = process.env.PORT || 8080
-app.listen(PORT, () => {
-    console.log(`App listening to ${PORT}....`)
-    console.log('Press Ctrl+C to quit.')
-})
+const HOST = '0.0.0.0'
+app.listen(PORT, HOST);
+console.log(`App listening to ${PORT}....`)
+console.log('Press Ctrl+C to quit.')

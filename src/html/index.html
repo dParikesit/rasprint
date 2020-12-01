@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rasprint</title>
 </head>
 <body>
-    <div class="container-flex">
-        <h1>Rasprint!!!</h1>
-        <form action="/upload" method="post" id="formElem" enctype="multipart/form-data">
-            <input type="file" multiple name="docs">
-            <input type="submit" value="Print!">
-        </form>
+    <img id="image" class="img-fluid">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-auto">
+                <form action="/upload" method="post" id="formElem" enctype="multipart/form-data">
+                    <input type="file" class="form-control" multiple name="docs">
+                </form>
+            </div>
+            <div class="col-auto">
+                <input type="submit" form="formElem" value="Print!" class="btn btn-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="list-group">
+                <ul id="ulist" class="list-group-item-success"></ul>
+            </div>
+        </div>
+
     </div>
-    
+
 </body>
 </html>
