@@ -1,7 +1,6 @@
 const path = require('path')
 const express = require('express')
 const multer = require('multer')
-const {spawn} = require('child_process')
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -23,6 +22,8 @@ app.get('*', (req, res) => {
 })
 app.post('/upload', upload.array('docs', 5), function(req, res, next){
     try {
+        var spawn = require("child_process").spawn
+        var process = spawn('python', ["../barebone.py"])
         res.sendStatus(200)
     } catch (error) {
         console.log(error);
