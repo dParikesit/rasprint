@@ -1,7 +1,7 @@
 # This is my first ever javascript project!
 
 In this project, I'm trying to create document uploading system that is connected to a python script to print the document.
-The python script is made by my friend @ariqathallah38 for a youtube video.
+The python script is based on my friend's, @ariqathallah38 for a youtube video.
 
 I'm doing this project before I learn any Javascript framework and while learning about webpack (that's why you will be able to see webpack config even though it's kinda messy)
 
